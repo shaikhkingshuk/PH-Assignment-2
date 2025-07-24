@@ -6,17 +6,24 @@
 
 body {
   background: rgb(245, 248, 255);
+  width: 100%;
+  max-width: 1140px;
+  margin: auto;
+  /* border: 2px solid black; */
 }
 
 .container {
   width: 100%;
   max-width: 1140px;
   margin: auto;
+  /* border: 2px solid black; */
 }
+
+/* Css for Navbar */
 
 header {
   margin-top: 30px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 .navbar {
   display: flex;
@@ -52,7 +59,7 @@ header {
   max-height: 82px;
 }
 
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 600px) {
   .nav-txt {
     display: none;
   }
@@ -65,5 +72,71 @@ header {
     max-width: 63px;
     max-height: 38px;
     margin-left: 10px;
+  }
+}
+
+/* CSS for Banner */
+
+.banner {
+  display: flex;
+  align-items: end;
+  margin-top: 122px;
+}
+
+.banner-info {
+  width: 50%;
+}
+.banner-info h1 {
+  font-family: "Noto Serif", serif;
+  font-size: 65px;
+  font-weight: 700;
+  color: rgb(233, 90, 8);
+}
+.banner-info p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  font-family: "Inter", sans-serif;
+  margin-top: 13px;
+}
+.banner-info span {
+  color: #000000;
+}
+.banner-img {
+  width: 50%;
+}
+.banner-img img {
+  max-width: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .banner {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-top: 28px;
+  }
+  .container {
+    width: 100%;
+  }
+  .banner-info {
+    width: 100%;
+  }
+  .banner-info h1 {
+    /* border: 2px solid red; */
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .banner-info p {
+    /* border: 2px solid black; */
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+  }
+  .banner-img {
+    width: 100%;
+    /* border: 2px solid blue; */
+    margin-bottom: 28px;
   }
 }
