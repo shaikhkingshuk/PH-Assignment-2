@@ -222,4 +222,85 @@ p {
   .plant-products {
     grid-template-columns: repeat(2, 1fr);
   }
+  .about-plants h1 {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .about-plants p {
+    font-size: 17px;
+    line-height: 17px;
+  }
+  .flower-info h3,
+  p {
+    font-size: 16px;
+  }
+}
+
+/* CSS for plants lover section */
+
+.plants-lover {
+  display: flex;
+  align-items: stretch;
+  margin-top: 210.12px;
+}
+.lover,
+.lover-info {
+  flex: 1;
+}
+.lover img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.lover-info {
+  border: 2px solid red;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.info-details {
+  border: 2px solid black;
+  max-width: 540px;
+}
+.info-details ul {
+  list-style-position: outside;
+  padding-left: 20px;
+}
+.info-details h1 {
+  color: rgb(0, 0, 0);
+  font-family: "Noto Serif", serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 68px;
+}
+.info-details li {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 600px) {
+  .plants-lover {
+    flex-direction: column;
+    margin-top: 41.5px;
+  }
+  .lover-info {
+    margin-top: 18px;
+  }
+  .info-details h1 {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .info-details li {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-top: 16px;
+  }
 }
