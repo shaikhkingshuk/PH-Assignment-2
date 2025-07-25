@@ -6,10 +6,6 @@
 
 body {
   background: rgb(245, 248, 255);
-  /* width: 100%;
-  max-width: 1140px;
-  margin: auto; */
-  /* border: 2px solid black; */
 }
 
 .container {
@@ -33,23 +29,38 @@ header {
 
 .font-light {
   color: rgb(137, 135, 161);
+  font-weight: 400;
 }
 .font-bold {
   font-weight: 700;
 }
-
+.menu-list a {
+  text-decoration: none;
+}
 .menu-list {
   width: 100%;
   max-width: 415px;
   display: flex;
-  font-family: "Inter", sans-serif;
-  color: black;
-  font-size: 16px;
   justify-content: space-between;
 }
-
+.menu-list a {
+  font-family: "Inter", sans-serif;
+  color: rgb(37, 36, 50);
+  font-size: 16px;
+  line-height: 24px;
+}
 .icon {
+  height: 24px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon a {
+  color: rgb(0, 0, 0);
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .logo img {
@@ -72,6 +83,9 @@ header {
     max-width: 63px;
     max-height: 38px;
     margin-left: 10px;
+  }
+  .navbar {
+    padding: 0px 16px;
   }
 }
 
@@ -122,6 +136,7 @@ header {
   }
   .banner-info {
     width: 100%;
+    padding: 0px 16px;
   }
   .banner-info h1 {
     /* border: 2px solid red; */
@@ -142,7 +157,7 @@ header {
 /* CSS for plants */
 
 .plants {
-  margin-top: 118px;
+  margin-top: 68px;
 }
 .about-plants {
   display: flex;
@@ -169,6 +184,7 @@ header {
   font-weight: 400;
   line-height: 27px;
   text-align: center;
+  margin-top: 16px;
 }
 .flower-info {
   display: flex;
@@ -217,6 +233,10 @@ p {
   font-weight: 700;
 }
 @media screen and (max-width: 600px) {
+  .plants {
+    width: 100%;
+    padding: 0px 14px;
+  }
   .plant-products {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -225,9 +245,9 @@ p {
     line-height: 33px;
   }
   .about-plants p {
-    font-size: 17px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
     line-height: 17px;
-    margin-top: 16px;
   }
   .flower-info h3,
   p {
@@ -270,6 +290,7 @@ p {
   display: flex;
   justify-content: end;
   align-items: center;
+  padding: 0px 16px 0px 16px;
 }
 .info-details {
   max-width: 540px;
@@ -294,6 +315,9 @@ p {
   margin-top: 20px;
 }
 @media screen and (max-width: 600px) {
+  .about-plants {
+    margin-top: 143px;
+  }
   .plants-lover {
     flex-direction: column;
     margin-top: 41.5px;
@@ -308,6 +332,9 @@ p {
     font-size: 24px;
     line-height: 33px;
   }
+  .plants-lover {
+    width: 100%;
+  }
   .info-details li {
     color: rgba(0, 0, 0, 0.5);
     font-family: "Inter", sans-serif;
@@ -315,6 +342,8 @@ p {
     font-weight: 400;
     line-height: 17px;
     margin-top: 16px;
+    width: 100%;
+    padding: 0px 10px 0px 10px;
   }
 }
 
@@ -350,11 +379,14 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.deal-img1 {
   color: rgb(255, 255, 255);
   font-family: "Noto Serif", serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 27px;
+  padding: 0px 10px 0px 10px;
 }
 .deal-img2 {
   max-height: 201px;
@@ -370,11 +402,14 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.deal-img2 h3 {
   color: rgb(255, 255, 255);
   font-family: "Noto Serif", serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 27px;
+  padding: 0px 10px 0px 10px;
 }
 .deal-img3 {
   max-height: 423.12px;
@@ -390,17 +425,21 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.deal-img3 {
   color: rgb(255, 255, 255);
   font-family: "Noto Serif", serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 50px;
+  padding: 0px 10px 0px 10px;
 }
 .deal-center {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 .img-txt {
   display: flex;
@@ -413,7 +452,7 @@ p {
   font-size: 16px;
   font-weight: 600;
   line-height: 19px;
-  padding: 26px 50px 26px 50px;
+  padding: 15px 50px 15px 50px;
   text-decoration: underline;
 }
 .deal-img3 p {
@@ -427,11 +466,17 @@ p {
 }
 
 @media screen and (max-width: 600px) {
+  .about-plants {
+    padding: 0px 28.5px;
+  }
   .deal-images {
     display: flex;
     flex-direction: column;
-    width: 361px;
+    max-width: 100%;
     height: 581px;
+    margin-top: 51.5px;
+    margin-bottom: 40px;
+    padding: 0px 16px;
   }
   .deal-img-box1 {
     height: auto;
@@ -440,7 +485,7 @@ p {
   .deal-img1,
   .deal-img2,
   .deal-img3 {
-    width: 361px;
+    max-width: 100%;
     height: 177px;
     margin-bottom: 20px;
     border-radius: 14px;
