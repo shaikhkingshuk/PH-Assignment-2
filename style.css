@@ -400,3 +400,109 @@ p {
     width: 100%;
   }
 }
+
+/* CSS for footer section */
+
+.footer {
+  height: 348px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-box {
+  max-width: 1120px;
+  width: 100%;
+  max-height: 248px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-box1 {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.footer-info {
+  height: 179px;
+  max-width: 359px;
+  width: 100%;
+}
+.footer-info img {
+  height: 81px;
+}
+.footer-info p {
+  margin-top: 16px;
+  height: 81px;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-top: 16px;
+}
+.footer-box2 {
+  max-width: 85px;
+  width: 100%;
+}
+.footer-box2 ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: rgb(107, 114, 128);
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.footer-box2 li {
+  list-style: none;
+}
+.footer-box2 a {
+  text-decoration: none;
+}
+
+.footer-box3-width {
+  max-width: 128px;
+  width: 100%;
+}
+
+.footer-box3 {
+  max-width: 216px;
+  width: 100%;
+  max-height: 36px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-box3 img {
+  height: 100%;
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    height: 865px;
+    max-width: 393px;
+    width: 100%;
+  }
+  .footer-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 359px;
+    width: 100%;
+    max-height: 765px;
+    height: 100%;
+  }
+  .footer-info {
+    height: 173px;
+  }
+  .footer-info p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .footer-box12 {
+    height: 248px;
+  }
+}
